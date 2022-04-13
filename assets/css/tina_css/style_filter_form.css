@@ -1,0 +1,28 @@
+.form-check .bi.bi-clock,
+.form-check .bi.bi-cash-coin,
+.form-check .bi-bookmark-check,
+.form-check .bi.bi-person,
+.form-check .bi.bi-briefcase,
+.form-check .bi-arrow-down-left-square,
+.form-check .bi-arrow-down-right-square,
+.form-check .bi.bi-list-ul,
+.form-check .bi-grid-3x3-gap {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
+i.bi.bi-heart.p-2.position-absolute.text-white {
+    top: -9px;
+    left: -9px;
+}
+
+.title_form {
+    padding-top: 16px;
+}
+
+.input-list .form-check .form-check-label:before,
+.input-list .form-check .form-check-label:after {
+    left: 90%;
+    top: 14px;
+}

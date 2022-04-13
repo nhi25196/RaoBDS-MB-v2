@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Profile</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Thêm</div>
+        <!-- <div class="right">
+            <a href="#" class="headerButton">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a href="#" class="headerButton">
+                <ion-icon name="person-add-outline"></ion-icon>
+            </a>
+        </div> -->
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+        <div class="section mt-2">
+            <div class="profile-head">
+                <div class="avatar">
+                    <img src="assets/img/avatar1.jpg" alt="avatar" class="imaged w64 rounded">
+                </div>
+                <div class="in">
+                    <h3 class="name">Diego Morata</h3>
+                    <!-- <h5 class="subtext">Designer</h5> -->
+                </div>
+            </div>
+        </div>
+        <!-- tab content -->
+        <div class="section full mb-2">
+            <!-- settings -->
+            <div class="tab-pane show" id="settings" role="tabpanel">
+                <ul class="listview image-listview text flush transparent pt-1">
+                    <li>
+                        <div class="item">
+                            <div class="in">
+                                <div>
+                                    Dark mode
+                                    <!-- <footer>Disabled notifications from this person</footer> -->
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodesidebar">
+                                    <label class="form-check-label" for="darkmodesidebar"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Đơn mua</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Đơn bán</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>tin đăng đã lưu</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Lịch sử giao dịch</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Tài khoản nhận thanh toán</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Trợ giúp</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item">
+                            <div class="in">
+                                <div>Cài đặt</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- * settings -->
+        </div>
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu ">
+        <a href="index.html " class="item active ">
+            <div class="col ">
+                <i class="bi bi-house-door "></i>
+                <strong>Trang chủ</strong>
+            </div>
+        </a>
+        <a href="manage.html " class="item ">
+            <div class="col ">
+                <i class="bi bi-person "></i>
+                <strong>Quản lý tin</strong>
+            </div>
+        </a>
+        <a href="post_step_1.html" class="item ">
+            <div class="col ">
+                <i class="bi bi-pencil-square "></i>
+
+                <strong>Đăng tin</strong>
+            </div>
+        </a>
+        <a href="login.html " class="item ">
+            <div class="col ">
+                <i class="bi bi-bell "></i>
+                <strong>Thông báo</strong>
+            </div>
+        </a>
+        <a href="profile.html " class="item ">
+            <div class="col ">
+                <i class="bi bi-three-dots "></i>
+                <strong>Thêm</strong>
+            </div>
+        </a>
+
+    </div>
+    <!-- * App Bottom Menu -->
+
+
+
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>

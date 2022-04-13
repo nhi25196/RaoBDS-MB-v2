@@ -1,0 +1,279 @@
+/* body {
+    margin: revert!important;
+    width: auto!important;
+} */
+
+
+/* .tina_css-list-search .search-form {
+    width: 80%!important;
+} */
+
+p.text {
+    margin: 8px!important;
+}
+
+.carousel-slider .splide__pagination {
+    position: absolute;
+    top: 100px;
+}
+
+.carousel-slider .splide__list {
+    padding-bottom: 0px!important;
+}
+
+.card {
+    box-shadow: none;
+}
+
+.limit-text {
+    overflow: hidden;
+    max-height: 45px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+.pageTitle {
+    position: relative;
+}
+
+
+/* .searchbox_home .form-control {
+    padding-left: 100px;
+} */
+
+.tina_splide__track {
+    padding: 0!important;
+}
+
+.tina_splide__track ul li {
+    margin-right: 0px!important;
+}
+
+.tina_remove_after_a>li a.item:after {
+    display: none;
+}
+
+body.dark-mode-active .change_color {
+    color: #FFF;
+}
+
+body.dark-mode-active .limit-text {
+    color: white!important;
+}
+
+body.dark-mode-active .row.p-1 {
+    background: #0c1624!important;
+}
+
+body.dark-mode-active .section.full .section-title {
+    background: #0c1624!important;
+}
+
+
+/* body{
+    width: auto!important;
+} */
+
+
+/* a.item::after {
+    background-image: inherit!important;
+} */
+
+.w120 {
+    width: 120px!important;
+}
+
+
+/* icon like */
+
+.like_list {
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+    color: white;
+}
+
+.status_list {
+    left: 10px;
+    top: 25px;
+    z-index: 1;
+}
+
+
+/*list - icon camera-film  */
+
+.camera_list {
+    right: 4px!important;
+    font-size: 20px;
+}
+
+.badge_camera_list {
+    right: 0px!important;
+    font-size: 12px;
+    font-weight: bold;
+    top: -1px
+}
+
+.film_list {
+    right: 3px!important;
+    font-size: 22px;
+    top: 18px;
+    color: black
+}
+
+.badge_film_list {
+    right: 2px!important;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* index */
+
+.camera_grid_index {
+    right: 17px!important;
+    font-size: 20px;
+    top: 5px
+}
+
+.badge_camera_grid_index {
+    right: 0px!important;
+    top: -1px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.film_grid_index {
+    right: 16px!important;
+    font-size: 22px;
+    top: 23px;
+    color: black
+}
+
+.badge_film_grid_index {
+    right: 2px!important;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* grid camera */
+
+.camera_grid {
+    right: 17px!important;
+    font-size: 20px;
+    top: 10px
+}
+
+.film_grid {
+    right: 16px!important;
+    font-size: 22px;
+    top: 28px;
+    color: black
+}
+
+.badge_camera_grid {
+    right: 0px!important;
+    top: -1px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge_film_grid {
+    right: 2px!important;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*  */
+
+
+/* .caret_form {
+    top: 35px;
+    right: 10px;
+} */
+
+.focus_input {
+    height: 43px!important;
+    background-color: #c7c7c7!important;
+    border-radius: 0 6px 6px 0!important;
+}
+
+
+/* list_manage */
+
+.bottom_img_list_manage {
+    bottom: 0px;
+    background-color: #50331099;
+    height: 25px;
+    width: 100%;
+    color: white;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.filter_bottom_manage {
+    width: 100%;
+    height: 56vh;
+}
+
+
+/* listview item_list */
+
+.image-listview>li a.item_list {
+    color: #141515!important;
+    padding-right: 36px;
+}
+
+.image-listview>li .item_list {
+    padding: 10px 16px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.listview>li .item_list {
+    position: relative;
+}
+
+
+/* row  */
+
+.row.p-1 {
+    background: #fff!important;
+}
+
+i.bi.bi-heart.p-2.position-absolute.text-white {
+    left: 0;
+}
+
+
+/* form title */
+
+.title_form {
+    background-color: #f9f9f9!important;
+}
+
+
+/* slider detail*/
+
+.img-size {
+    height: 450px;
+    width: 700px;
+    background-size: cover;
+    overflow: hidden;
+}
