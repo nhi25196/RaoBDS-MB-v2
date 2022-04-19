@@ -1,3 +1,2 @@
-
-- check slider detail page (nút slide bấm chưa được)
-- tìm cách bỏ css form lọc
+- css form filter
+- slider dot dính js của theme không fix được (=> su dung thư viện slick slider)
