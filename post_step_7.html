@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>post - 4</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="">
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+    <!-- App Header -->
+    <div class="appHeader no-border position-absolute">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <i class="bi bi-chevron-left"></i>
+            </a>
+        </div>
+        <div class="pageTitle"> Thông tin chi tiết</div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+        <div class="section full">
+            <div class=" p-0 transparent">
+                <div class="wide-block pb-1 pt-1">
+                    <form>
+
+                        <div class="form-group">
+                            <div class="row pt-1">
+                                <div class="col-6">
+                                    <!-- <select class="form-control form-select pe-0" id="city5">
+                                        <option selected="" disabled="" value="">Số phòng ngủ </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="3">5</option>
+                                        <option value="4">6</option>
+                                        <option value="3">7</option>
+                                        <option value="4">8</option>
+                                        <option value="3">9</option>
+                                        <option value="4">10</option>
+                                        <option value="4">nhiều hơn 10</option>
+                                    </select> -->
+                                    <div class="section-title fs-6">Số tầng </div>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <!-- <select class="form-control form-select pe-0" id="city5">
+                                        <option selected="" disabled="" value="">Số phòng vệ sinh </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="3">5</option>
+                                        <option value="4">6</option>
+                                        <option value="3">7</option>
+                                        <option value="4">8</option>
+                                        <option value="3">9</option>
+                                        <option value="4">10</option>
+                                        <option value="4">nhiều hơn 10</option>
+                                    </select> -->
+                                    <div class="stepper stepper-secondary text-end">
+                                        <a href="#" class="stepper-button stepper-down">-</a>
+                                        <input type="text" class="form-control" value="0" disabled="">
+                                        <a href="#" class="stepper-button stepper-up">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row pt-2">
+                                <div class="col-6">
+
+                                    <div class="section-title fs-6">Số phòng ngủ</div>
+                                </div>
+                                <div class="col-6 text-end">
+
+                                    <div class="stepper stepper-secondary text-end">
+                                        <a href="#" class="stepper-button stepper-down">-</a>
+                                        <input type="text" class="form-control" value="0" disabled="">
+                                        <a href="#" class="stepper-button stepper-up">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row pt-2">
+                                <div class="col-6">
+
+                                    <div class="section-title fs-6">Số phòng vệ sinh</div>
+                                </div>
+                                <div class="col-6 text-end">
+
+                                    <div class="stepper stepper-secondary text-end">
+                                        <a href="#" class="stepper-button stepper-down">-</a>
+                                        <input type="text" class="form-control" value="0" disabled="">
+                                        <a href="#" class="stepper-button stepper-up">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group boxed">
+                            <div class="row pt-1">
+                                <div class="col-6">
+                                    <select class="form-control form-select pe-0" id="city5">
+                                        <option selected="" disabled="" value="">Giấy tờ pháp lý </option>
+                                        <option value="1">Đã có sổ </option>
+                                        <option value="2">Đang chờ sổ</option>
+                                        <option value="3">Giấy tờ khác</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-control form-select" id="city5">
+                                        <option selected="" disabled="" value="">Nội thất </option>
+                                        <option value="1">Nội thất cao cấp </option>
+                                        <option value="2">Bàn giao thô</option>
+                                        <option value="3">Hoàn thiện cơ bản</option>
+                                        <option value="4">Nội thất đầy đủ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="section full mt-2">
+                    <div class="section-title bg-transparent">Tiêu đề tin đăng và mô tả chi tiết</div>
+                    <div class="wide-block pb-4 pt-1">
+                        <form>
+                            <div class="form-group boxed">
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-control" id="tieudetindang" placeholder="Tiêu đề tin đăng" autocomplete="off">
+                                    <i class="clear-input">
+                                        <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="form-group boxed">
+                                <div class="input-wrapper">
+                                    <textarea class="form-control" id="motachitiet" placeholder="Mô tả chi tiết &#10; Ví dụ: &#10; - Đất sổ đỏ 45m2 (5x9)... Trần Ninh, Hà Đông" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group boxed">
+                                <div class="input-wrapper">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="radioInline" id="radioInlineDefault1">
+                                                <label class="form-check-label  ps-4" for="radioInlineDefault1"> Cá nhân</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="radioInline" id="radioInlineDefault2">
+                                                <label class="form-check-label ps-4" for="radioInlineDefault2">Môi giới</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="appBottomMenu carousel-button-footer">
+
+        <div class="row">
+            <div class="col-6">
+                <a href="#" class="btn btn-secondary btn-lg btn-block w100 rounded-0">Xem trước</a>
+            </div>
+            <div class="col-6">
+                <a href="detail.html" class="btn btn-primary btn-lg btn-block w100 rounded-0">Đăng tin </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- <a href="post_step_7.html">
+            <button type="submit" class="btn btn-primary btn-lg btn-block rounded-0 fixed-bottom">Đăng tin</button>
+        </a> -->
+
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>

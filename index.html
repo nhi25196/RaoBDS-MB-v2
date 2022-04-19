@@ -54,8 +54,26 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+
+                    <div data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></div>
                     <h5 class="modal-title">Lọc kết quả </h5>
-                    <a href="#" data-bs-dismiss="modal">Close</a>
+                    <i class="bi bi-info-circle fs-5" data-bs-toggle="offcanvas" href="#offcanvas-top"> </i>
+                    <!-- Offcanvas Top -->
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas-top">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Hướng dẫn lọc kết quả</h5>
+                            <div class="" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></div>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                Lọc từ khoá:<br> - Tìm theo địa chỉ: Hồ chí minh, hà nội,...<br> - Tìm theo tiêu đề: Chung cư, nhà hẻm,... <br> ...
+                                <br> Lọc theo biểu mẫu có sẵn:<br> - Chọn các thông tin trên biểu mẫu để lọc kết quả cụ thể
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * Offcanvas Top -->
                 </div>
                 <div class="modal-body p-0">
                     <!-- form filter -->
@@ -63,16 +81,24 @@
                         <div class="wide-block">
                             <div class="form-group boxed">
                                 <div class="input-wrapper">
-                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <form class="search-form">
+                                        <div class="form-group searchbox">
+                                            <i class="input-icon bi bi-search pt-1">
+                                            </i>
+                                            <input type="text" class="form-control ps-5" value="" placeholder="Tìm từ khoá...">
+
+                                        </div>
+                                    </form>
+                                    <!-- <input type="text" class="form-control" placeholder="Tìm từ khoá..."> -->
                                 </div>
                             </div>
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
                                     <select class="form-control form-select" id="city5">
-                                        <option value="0">Chọn khu vực</option>
-                                        <option value="1">New York City</option>
-                                        <option value="2">Austin</option>
-                                        <option value="3">Colorado</option>
+                                        <option value="0">Chọn danh mục</option>
+                                        <option value="1">Mua bán</option>
+                                        <option value="2">Cho thuê</option>
+                                        <option value="3">Dự án</option>
                                         </select>
                                 </div>
                             </div>
@@ -96,7 +122,7 @@
                     </div>
 
                     <div class="section full">
-                        <div class="section-title title_form">Sắp xếp theo</div>
+                        <div class="section-title title_form fw-bold">Sắp xếp theo</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -125,7 +151,7 @@
                     </div>
 
                     <div class="section full">
-                        <div class="section-title title_form">Đăng bởi</div>
+                        <div class="section-title title_form fw-bold">Đăng bởi</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -139,14 +165,7 @@
                                                 <input class="form-check-input" type="radio" name="radioList_group_1" id="radioList2">
                                                 <label class="form-check-label" for="radioList2">Giá thấp nhất</label>
                                             </div> -->
-                                        <div class="form-check">
 
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                                            <i class="bi bi-bookmark-check"></i>
-                                            <label class="form-check-label" for="flexCheckDefault1">
-                                                Đối tác 
-                                                </label>
-                                        </div>
                                         <div class="form-check position-relative">
 
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
@@ -170,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="section full">
+                    <!-- <div class="section full">
                         <div class="section-title title_form">Bạn muốn</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
@@ -199,10 +218,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="section full">
-                        <div class="section-title title_form">Hiển thị dạng</div>
+                        <div class="section-title title_form fw-bold">Hiển thị dạng</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -234,6 +253,7 @@
                     </div>
                     <!-- * form filter -->
                 </div>
+
             </div>
         </div>
     </div>
@@ -266,80 +286,99 @@
             </div>
         </div>
         <!-- * carousel slider -->
-
-
         <!-- Kham pha BDS -->
-        <div class="section">
-            <div class="section-title">
-                <h3 class="subtitle m-0">Khám phá danh mục bất động sản</h3>
+        <div class="section full">
+            <div class="section-title  mt-1">
+                <div class="subtitle m-0 fw-bold">Khám phá bất động sản</div>
+
             </div>
-            <!-- carousel multiple -->
-            <div class="carousel-multiple splide">
-                <div class="splide__track p-0">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-
-                            <img src="assets/img/1.jpeg" class="card-img-top rounded-0" alt="image ">
-                            <div class="card-body pt-1 pb-1 p-0 text-center  ">
-                                <h4 class="mb-0 ">Chuyên mục </h4>
-                            </div>
-
-                        </li>
-                        <li class="splide__slide ">
-
-                            <img src="assets/img/4.jpeg " class="card-img-top rounded-0" alt="image ">
-                            <div class="card-body pt-1 pb-1 p-0 text-center">
-                                <h4 class="mb-0 ">Chuyên mục </h4>
-                            </div>
-
-                        </li>
-                        <li class="splide__slide ">
-
-                            <img src="assets/img/1.jpeg " class="card-img-top rounded-0" alt="image ">
-                            <div class="card-body pt-1 pb-1 p-0 text-center ">
-                                <h4 class="mb-0 ">Chuyên mục </h4>
-                            </div>
-
-                        </li>
-
-
-
-                    </ul>
+            <div class="wide-block p-2 pb-1 listview">
+                <!-- carousel multiple -->
+                <div class="carousel-multiple splide">
+                    <div class="splide__track p-0">
+                        <ul class="splide__list pb-0">
+                            <!-- <li class="splide__slide imaged">
+                                <img src="assets/img/1.jpeg" class="card-img-top rounded-0" alt="image ">
+                                <div class="card-body pt-1 pb-1 p-0 text-center  ">
+                                    <h4 class="mb-0 ">Chuyên mục </h4>
+                                </div>
+                            </li>
+                            <li class="splide__slide imaged">
+                                <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
+                                <div class="card-body pt-1 pb-1 p-0 text-center">
+                                    <h4 class="mb-0 ">Chuyên mục </h4>
+                                </div>
+                            </li>
+                            <li class="splide__slide imaged">
+                                <img src="assets/img/4.jpeg" class="card-img-top rounded-0" alt="image ">
+                                <div class="card-body pt-1 pb-1 p-0 text-center ">
+                                    <h4 class="mb-0 ">Chuyên mục </h4>
+                                </div>
+                            </li> -->
+                            <li class="splide__slide m-0 ">
+                                <div class="shadow-none card product-card rounded-0 ">
+                                    <div class=" card-body position-relative p-0 pe-2 ">
+                                        <a href="detail.html " class="item ">
+                                            <img src="assets/img/1.jpeg" class="card-img-top rounded-0" alt="image ">
+                                            <h4 class="pt-1 pb-1 m-0 text-center">
+                                                Chuyên mục
+                                            </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide m-0 ">
+                                <div class="shadow-none card product-card rounded-0 ">
+                                    <div class=" card-body position-relative p-0 pe-2 ">
+                                        <a href="detail.html " class="item ">
+                                            <img src="assets/img/4.jpeg" class="card-img-top rounded-0" alt="image ">
+                                            <h4 class="pt-1 pb-1 m-0 text-center">
+                                                Chuyên mục
+                                            </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- * carousel multiple -->
             </div>
-            <!-- * carousel multiple -->
+
         </div>
 
         <!-- Mua ban BDS -->
         <div class="section full">
-            <div class="section-title">
-                <h3 class="subtitle m-0">Mua ban bất động sản</h3>
+            <div class="section-title  mt-1">
+                <div class="subtitle m-0 fw-bold">Mua bán bất động sản</div>
+                <div class="text-end ">
+                    <a href="list.html" class="listview-title p-0">
+                        <span>Xem tất cả</span>
+                        <!-- <i class="bi bi-arrow-right "></i> -->
+                    </a>
+                </div>
             </div>
             <div class="wide-block p-2 listview">
-                <!-- carousel small -->
+                <!-- carousel multiple -->
                 <div class="carousel-multiple splide ">
                     <div class="splide__track p-0 ">
                         <ul class="splide__list ">
                             <li class="splide__slide m-0 ">
                                 <div class="shadow-none  card product-card rounded-0 ">
-                                    <div class=" card-body position-relative p-0 pe-1 ">
-                                        <a href="detail_mdb.html " class="item ">
+                                    <div class=" card-body position-relative p-0 pe-2 ">
+                                        <a href="detail.html " class="item ">
 
                                             <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
 
                                             <div class="content">
-                                                <div class="title limit-text p-0 overflow-hidden" style="height:47px">
-                                                    Quickly manage the layout and manage the layout and manage the layout and
-                                                </div>
+                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                    Rao bán chung cư giá rẻ cực khủng tai trung tam thanh pho ho chi minh
+                                                </h4>
                                                 <div class="text-muted p-0">62 m <sup>2</sup></div>
-                                                <div class="text-danger fw-bold">62 trieu</div>
-
-
+                                                <!-- <div class="text-danger fw-bold">62 trieu</div> -->
+                                                <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
                                                 <p class="text-muted mb-0 ">
-                                                    <i class="bi bi-briefcase-fill "></i>
-                                                    <span> Tin ưu tiên</span>
-                                                </p>
-                                                <p class="text-muted mb-0 ">
+                                                    <!-- <i class="bi bi-person-circle"></i> -->
                                                     <i class="bi bi-geo-alt "></i>
                                                     <span> Lạng Sơn</span>
                                                 </p>
@@ -352,13 +391,13 @@
                                             <i class="bi-camera-video-fill pe-2 pt-2  position-absolute top-0 end-0 text-dark camera_grid_index ">   
                                             </i>
                                             <span class="badge pe-2 pt-3 position-absolute top-0 end-0 ">4</span> -->
-                                            <div class="fa top-0 position-absolute end-0 pe-1 pt-1 me-1">
+                                            <div class="fa top-0 position-absolute end-0 pe-2 pt-1 me-1">
                                                 <span class="fa-layers fa-fw">
                                                     <i class="bi-aspect-ratio-fill text-dark fs-6" ></i>
                                                     <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:0px">5</span>
                                                 </span>
                                             </div>
-                                            <div class="fa top-0 position-absolute end-0 pe-4 pt-1 me-1">
+                                            <div class="fa top-0 position-absolute end-0 pe-5 pt-1 me-1">
                                                 <span class="fa-layers fa-fw">
                                                     <i class="fa-solid fa-video text-dark fs-6" ></i>
                                                     <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
@@ -377,18 +416,24 @@
                 </div>
             </div>
             <!-- * carousel small -->
-            <div class="text-center ">
+            <!-- <div class="text-center ">
                 <a href="list.html ">
                     <button type="button " class="btn btn-text-primary me-1"> <span>Xem thêm 1.878 bất động sản khác</span> <i class="bi bi-arrow-right "></i></button>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!-- * Mua ban BDS -->
 
         <!--  Cho thue BDS-->
         <div class="section full">
-            <div class="section-title">
-                <h3 class="subtitle m-0">Cho thue bất động sản</h3>
+            <div class="section-title  mt-1">
+                <div class="subtitle m-0 fw-bold">Cho thuê bất động sản</div>
+                <div class="text-end ">
+                    <a href="list.html" class="listview-title p-0">
+                        <span>Xem tất cả</span>
+                        <!-- <i class="bi bi-arrow-right "></i> -->
+                    </a>
+                </div>
             </div>
             <div class="wide-block p-2 listview">
                 <!-- carousel small -->
@@ -397,34 +442,29 @@
                         <ul class="splide__list ">
                             <li class="splide__slide m-0 ">
                                 <div class="shadow-none card product-card rounded-0 ">
-                                    <div class="card-body position-relative p-0 pe-1 ">
-                                        <a href="detail_mdb.html " class="item ">
+                                    <div class="card-body position-relative p-0 pe-2 ">
+                                        <a href="detail.html " class="item ">
                                             <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
 
                                             <div class="content">
-                                                <div class="title limit-text p-0 overflow-hidden" style="height:47px">
-                                                    Quickly manage the layout and manage the layout and manage the layout and
-                                                </div>
-                                                <div class="text-muted p-0">62 m <sup>2</sup></div>
-                                                <div class="text-danger fw-bold">62 trieu</div>
+                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                    Rao bán chung cư giá rẻ cực khủng tai trung tam thanh pho ho chi minh
+                                                </h4>
+                                                <div class="text-muted p-0">Diện tích : <span>62</span>m<sup>2</sup></div>
+                                                <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
 
-
-                                                <p class="text-muted mb-0 ">
-                                                    <i class="bi bi-briefcase-fill "></i>
-                                                    <span> Tin ưu tiên</span>
-                                                </p>
                                                 <p class="text-muted mb-0 ">
                                                     <i class="bi bi-geo-alt "></i>
                                                     <span> Lạng Sơn</span>
                                                 </p>
                                             </div>
-                                            <div class="fa top-0 position-absolute end-0 pe-1 pt-1 me-1">
+                                            <div class="fa top-0 position-absolute end-0 pe-2 pt-1 me-1">
                                                 <span class="fa-layers fa-fw">
                                                     <i class="bi-aspect-ratio-fill text-dark fs-6" ></i>
                                                     <span class="fa-2xs fa-layers-text fa-inverse">5</span>
                                                 </span>
                                             </div>
-                                            <div class="fa top-0 position-absolute end-0 pe-4 pt-1 me-1">
+                                            <div class="fa top-0 position-absolute end-0 pe-5 pt-1 me-1">
                                                 <span class="fa-layers fa-fw">
                                                     <i class="fa-solid fa-video text-dark fs-6" ></i>
                                                     <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
@@ -441,18 +481,24 @@
                 </div>
             </div>
             <!-- * carousel small -->
-            <div class="text-center ">
+            <!-- <div class="text-center ">
                 <a href="list.html ">
                     <button type="button " class="btn btn-text-primary me-1 "> <span>Xem thêm 1.878 bất động sản khác</span> <i class="bi bi-arrow-right "></i></button>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!-- * Cho thue BDS -->
 
         <!-- news -->
         <div class="section full">
-            <div class="section-title">
-                <h3 class="subtitle m-0">Tin tức bất động sản</h3>
+            <div class="section-title  mt-1">
+                <div class="subtitle m-0 fw-bold">Tin tức</div>
+                <div class="text-end ">
+                    <a href="list.html" class="listview-title p-0">
+                        <span>Xem tất cả</span>
+                        <!-- <i class="bi bi-arrow-right "></i> -->
+                    </a>
+                </div>
             </div>
             <div class="wide-block pt-2 pb-2">
                 <!-- carousel small -->
@@ -461,16 +507,19 @@
                         <ul class="splide__list ">
                             <li class="splide__slide m-0 ">
                                 <div class="shadow-none card product-card rounded-0 ">
-                                    <div class="card-body p-0 pe-1 ">
+                                    <div class="card-body p-0 pe-2 ">
                                         <a href="# " class="item ">
                                             <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
                                             <div class="content ">
-                                                <div class="title p-0 ">
+                                                <!-- <div class="title p-0 ">
                                                     Kinh nghiem xay nha cap 4 dep, tiet kiem chi phi
-                                                </div>
+                                                </div> -->
+                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                    Kinh nghiệm xây nhà cấp 4 đẹp tiết kiệm
+                                                </h4>
 
                                                 <p class="text-muted mb-0 overflow-hidden" style="max-height: 60px;">
-                                                    <span class="limit-text "> Xay nha cap 4 thuong se su dung ket cau don gian, chi phi xay dung kha thap phu hop voi dia ly</span>
+                                                    <span class="limit-text "> Xấy nhà cấp 4 sử dụng cơ cấu đơn giản chi phí thấp rất nhiều so với nhà cao tầng</span>
                                                 </p>
                                             </div>
                                         </a>
@@ -483,10 +532,7 @@
                 </div>
                 <!-- * carousel small -->
             </div>
-            <div class="text-center ">
-                <button type="button " class="btn btn-text-primary mb-1 btn-block "> <span>Xem thêm </span> <i class="bi bi-arrow-right "></i></button>
 
-            </div>
         </div>
         <!-- * news -->
 

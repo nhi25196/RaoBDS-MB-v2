@@ -1,0 +1,3 @@
+
+- check slider detail page (nút slide bấm chưa được)
+- tìm cách bỏ css form lọc

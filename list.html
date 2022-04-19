@@ -52,8 +52,26 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+
+                    <div data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></div>
                     <h5 class="modal-title">Lọc kết quả </h5>
-                    <a href="#" data-bs-dismiss="modal">Close</a>
+                    <i class="bi bi-info-circle fs-5" data-bs-toggle="offcanvas" href="#offcanvas-top"> </i>
+                    <!-- Offcanvas Top -->
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas-top">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Hướng dẫn lọc kết quả</h5>
+                            <div class="" data-bs-dismiss="offcanvas"><i class="bi bi-x-lg"></i></div>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                Lọc từ khoá:<br> - Tìm theo địa chỉ: Hồ chí minh, hà nội,...<br> - Tìm theo tiêu đề: Chung cư, nhà hẻm,... <br> ...
+                                <br> Lọc theo biểu mẫu có sẵn:<br> - Chọn các thông tin trên biểu mẫu để lọc kết quả cụ thể
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * Offcanvas Top -->
                 </div>
                 <div class="modal-body p-0">
                     <!-- form filter -->
@@ -61,20 +79,27 @@
                         <div class="wide-block">
                             <div class="form-group boxed">
                                 <div class="input-wrapper">
-                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <form class="search-form">
+                                        <div class="form-group searchbox">
+                                            <i class="input-icon bi bi-search pt-1">
+                                        </i>
+                                            <input type="text" class="form-control ps-5" value="" placeholder="Tìm từ khoá...">
+
+                                        </div>
+                                    </form>
+                                    <!-- <input type="text" class="form-control" placeholder="Tìm từ khoá..."> -->
                                 </div>
                             </div>
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
                                     <select class="form-control form-select" id="city5">
-                                    <option value="0">Chọn khu vực</option>
-                                    <option value="1">New York City</option>
-                                    <option value="2">Austin</option>
-                                    <option value="3">Colorado</option>
+                                    <option value="0">Chọn danh mục</option>
+                                    <option value="1">Mua bán</option>
+                                    <option value="2">Cho thuê</option>
+                                    <option value="3">Dự án</option>
                                     </select>
                                 </div>
                             </div>
-
                             <div class="form-group boxed ">
                                 <div class="input-wrapper">
                                     <select class="form-control form-select" id="city5">
@@ -91,12 +116,11 @@
                                     <input type="range" class="form-range" id="customRange1">
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
                     <div class="section full">
-                        <div class="section-title title_form">Sắp xếp theo</div>
+                        <div class="section-title title_form fw-bold">Sắp xếp theo</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -107,7 +131,7 @@
                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                             <i class="bi bi-clock "></i>
                                             <label class="form-check-label" for="flexRadioDefault1">
-                                               Tin mới
+                                            Tin mới
                                             </label>
                                         </div>
                                         <div class="form-check position-relative">
@@ -125,7 +149,7 @@
                     </div>
 
                     <div class="section full">
-                        <div class="section-title title_form">Đăng bởi</div>
+                        <div class="section-title title_form fw-bold">Đăng bởi</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -139,20 +163,13 @@
                                             <input class="form-check-input" type="radio" name="radioList_group_1" id="radioList2">
                                             <label class="form-check-label" for="radioList2">Giá thấp nhất</label>
                                         </div> -->
-                                        <div class="form-check">
 
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                                            <i class="bi bi-bookmark-check"></i>
-                                            <label class="form-check-label" for="flexCheckDefault1">
-                                              Đối tác 
-                                            </label>
-                                        </div>
                                         <div class="form-check position-relative">
 
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                                             <i class="bi bi-person"></i>
                                             <label class="form-check-label" for="flexCheckDefault2">
-                                              Cá nhân
+                                            Cá nhân
                                             </label>
                                         </div>
                                         <div class="form-check position-relative">
@@ -160,7 +177,7 @@
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
                                             <i class="bi bi-briefcase"></i>
                                             <label class="form-check-label" for="flexCheckDefault3">
-                                              Môi giới
+                                            Môi giới
                                             </label>
                                         </div>
 
@@ -170,39 +187,39 @@
                         </div>
                     </div>
 
-                    <div class="section full">
-                        <div class="section-title title_form">Bạn muốn</div>
-                        <div class="wide-block p-0">
-                            <div class="form-group boxed p-0">
-                                <div class="input-wrapper">
+                    <!-- <div class="section full">
+                    <div class="section-title title_form">Bạn muốn</div>
+                    <div class="wide-block p-0">
+                        <div class="form-group boxed p-0">
+                            <div class="input-wrapper">
 
-                                    <div class="input-list">
-                                        <div class="form-check">
+                                <div class="input-list">
+                                    <div class="form-check">
 
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
-                                            <i class="bi bi-arrow-down-left-square"></i>
-                                            <label class="form-check-label" for="flexCheckDefault4">
-                                              Mua
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                        <i class="bi bi-arrow-down-left-square"></i>
+                                        <label class="form-check-label" for="flexCheckDefault4">
+                                            Mua
                                             </label>
-                                        </div>
-                                        <div class="form-check position-relative">
-
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                                            <i class="bi bi-arrow-down-right-square"></i>
-                                            <label class="form-check-label" for="flexCheckDefault5">
-                                              Bán
-                                            </label>
-                                        </div>
-
-
                                     </div>
+                                    <div class="form-check position-relative">
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                        <i class="bi bi-arrow-down-right-square"></i>
+                                        <label class="form-check-label" for="flexCheckDefault5">
+                                            Bán
+                                            </label>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div> -->
 
                     <div class="section full">
-                        <div class="section-title title_form">Hiển thị dạng</div>
+                        <div class="section-title title_form fw-bold">Hiển thị dạng</div>
                         <div class="wide-block p-0">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
@@ -213,7 +230,7 @@
                                             <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
                                             <i class="bi bi-list-ul"></i>
                                             <label class="form-check-label" for="flexRadioDefault3">
-                                               Hình và chữ
+                                            Hình và chữ
                                             </label>
                                         </div>
                                         <div class="form-check position-relative">
@@ -229,13 +246,12 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg rounded-0">Xác nhận</button>
                     </div>
                     <!-- * form filter -->
                 </div>
+
             </div>
         </div>
     </div>
@@ -261,8 +277,8 @@
                     </div>
                     <div class="col-6 d-flex justify-content-end">
                         <button type="button" class="btn border-0 .bg-transparent text-white p-0">
-                            <a href="grid.html" class="">
-                                <i class="bi bi-grid-3x3-gap m-0"></i>
+                            <a href="grid.html">
+                                <i class="bi bi-grid-3x3-gap m-0 text-secondary fw-bold"></i>
                             </a>
                         </button>
                     </div>
@@ -276,7 +292,7 @@
             <!-- <ul class="listview image-listview media p-1 pt-1 pb-1 ">
                         <li class="d-flex justify-content-center position-relative">
                             <i class="bi bi-heart position-absolute like_list"></i>
-                            <a href="detail_mdb.html" class="item_list p-1">
+                            <a href="detail.html" class="item_list p-1">
                                 <div class="imageWrapper position-relative">
 
                                     <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
@@ -308,40 +324,7 @@
                         </li>
                         <li class="d-flex justify-content-center position-relative">
                             <i class="bi bi-heart position-absolute like_list"></i>
-                            <a href="detail_mdb.html" class="item_list p-1">
-                                <div class="imageWrapper position-relative">
-
-                                    <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
-                                    <i class="bi-aspect-ratio-fill position-absolute text-dark camera_list">
-                                                <span class="badge position-absolute badge_camera_list">3</span>
-                                            </i>
-                                    <i class="bi bi-camera-video-fill position-absolute film_list">
-                                                <span class="badge badge_film_list position-absolute">2</span>
-                                            </i>
-
-                                </div>
-                                <div class="in">
-                                    <div class="content">
-                                        <div class="title limit-text ">
-                                            Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TPn đất tại TPn đất tại TPn đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh
-                                        </div>
-
-                                        <div class="text-muted">62 m <sup>2</sup></div>
-                                        <div class="price text-danger fw-bold">62 trieu</div>
-                                        <p class="text-muted mb-0">
-                                            <i class="bi bi-briefcase-fill"></i>
-                                            <span> Tin ưu tiên</span> -
-                                            <i class="bi bi-geo-alt"></i>
-                                            <span> Lạng Sơn</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="d-flex justify-content-center position-relative">
-                            <i class="bi bi-heart position-absolute like_list"></i>
-                            <a href="detail_mdb.html" class="item_list p-1">
+                            <a href="detail.html" class="item_list p-1">
                                 <div class="imageWrapper position-relative">
 
                                     <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
@@ -374,7 +357,7 @@
 
                         <li class="d-flex justify-content-center position-relative">
                             <i class="bi bi-heart position-absolute like_list"></i>
-                            <a href="detail_mdb.html" class="item_list p-1">
+                            <a href="detail.html" class="item_list p-1">
                                 <div class="imageWrapper position-relative">
 
                                     <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
@@ -407,7 +390,40 @@
 
                         <li class="d-flex justify-content-center position-relative">
                             <i class="bi bi-heart position-absolute like_list"></i>
-                            <a href="detail_mdb.html" class="item_list p-1">
+                            <a href="detail.html" class="item_list p-1">
+                                <div class="imageWrapper position-relative">
+
+                                    <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
+                                    <i class="bi-aspect-ratio-fill position-absolute text-dark camera_list">
+                                                <span class="badge position-absolute badge_camera_list">3</span>
+                                            </i>
+                                    <i class="bi bi-camera-video-fill position-absolute film_list">
+                                                <span class="badge badge_film_list position-absolute">2</span>
+                                            </i>
+
+                                </div>
+                                <div class="in">
+                                    <div class="content">
+                                        <div class="title limit-text ">
+                                            Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TPn đất tại TPn đất tại TPn đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh Bán đất tại TP hồ chí minh
+                                        </div>
+
+                                        <div class="text-muted">62 m <sup>2</sup></div>
+                                        <div class="price text-danger fw-bold">62 trieu</div>
+                                        <p class="text-muted mb-0">
+                                            <i class="bi bi-briefcase-fill"></i>
+                                            <span> Tin ưu tiên</span> -
+                                            <i class="bi bi-geo-alt"></i>
+                                            <span> Lạng Sơn</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="d-flex justify-content-center position-relative">
+                            <i class="bi bi-heart position-absolute like_list"></i>
+                            <a href="detail.html" class="item_list p-1">
                                 <div class="imageWrapper position-relative">
 
                                     <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
@@ -441,10 +457,10 @@
 
             <ul class="listview simple-listview">
                 <li>
-                    <a href="detail_mdb.html">
+                    <a href="detail.html">
                         <div class="item d-flex pt-1 pb-1">
                             <div class="imageWrapper position-relative">
-                                <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
+                                <img src="assets/img/new.png" alt="image" class="h-100 imaged w120 rounded-0">
                                 <!-- 
                                 <i class="bi-aspect-ratio-fill position-absolute p-1 top-0 end-0 text-dark  pt-0 camera_grid">
                                 </i>
@@ -470,12 +486,14 @@
                             </div>
                             <div class="in ps-2">
                                 <div class="content">
-                                    <div class="title limit-text ">
-                                        Bán đất tại TP hồ chí minh Binh Chanh
-                                    </div>
+
+                                    <h4 class="title limit-text p-0 overflow-hidden mb-0" style="height: 40px;">
+                                        Rao bán chung cư giá rẻ cực khủng phố hồ chí minh Bình Chánh Bình Chánh Bình Chánh
+                                    </h4>
 
                                     <div class="text-muted">62 m <sup>2</sup></div>
-                                    <div class="price text-danger fw-bold">62 trieu</div>
+                                    <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
+
                                     <p class="text-muted mb-0">
                                         <i class="bi bi-briefcase-fill"></i>
                                         <span> Tin ưu tiên</span> -
@@ -489,10 +507,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="detail_mdb.html">
+                    <a href="detail.html">
                         <div class="item d-flex pt-1 pb-1">
                             <div class="imageWrapper position-relative">
-                                <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
+                                <img src="assets/img/new.png" alt="image" class="h-100 imaged w120 rounded-0">
                                 <div class="fa top-0 position-absolute end-0 pe-1 pt-1">
                                     <span class="fa-layers fa-fw">
                                         <i class="bi-aspect-ratio-fill text-dark fs-6" ></i>
@@ -505,16 +523,15 @@
                                         <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
                                     </span>
                                 </div>
-
                             </div>
                             <div class="in ps-2">
                                 <div class="content">
-                                    <div class="title limit-text ">
-                                        Bán đất tại TP hồ chí minh Binh Chanh
-                                    </div>
 
+                                    <h4 class="title limit-text p-0 overflow-hidden mb-0" style="height: 40px;">
+                                        Rao bán chung cư giá rẻ cực khủng phố hồ chí minh Bình Chánh Bình Chánh Bình Chánh
+                                    </h4>
                                     <div class="text-muted">62 m <sup>2</sup></div>
-                                    <div class="price text-danger fw-bold">62 trieu</div>
+                                    <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
                                     <p class="text-muted mb-0">
                                         <i class="bi bi-briefcase-fill"></i>
                                         <span> Tin ưu tiên</span> -
@@ -528,10 +545,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="detail_mdb.html">
+                    <a href="detail.html">
                         <div class="item d-flex pt-1 pb-1">
                             <div class="imageWrapper position-relative">
-                                <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
+                                <img src="assets/img/new.png" alt="image" class="h-100 imaged w120 rounded-0">
                                 <div class="fa top-0 position-absolute end-0 pe-1 pt-1">
                                     <span class="fa-layers fa-fw">
                                         <i class="bi-aspect-ratio-fill text-dark fs-6" ></i>
@@ -544,16 +561,15 @@
                                         <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
                                     </span>
                                 </div>
-
                             </div>
                             <div class="in ps-2">
                                 <div class="content">
-                                    <div class="title limit-text ">
-                                        Bán đất tại TP hồ chí minh Binh Chanh
-                                    </div>
 
+                                    <h4 class="title limit-text p-0 overflow-hidden mb-0" style="height: 40px;">
+                                        Rao bán chung cư giá rẻ cực khủng phố hồ chí minh Bình Chánh Bình Chánh Bình Chánh
+                                    </h4>
                                     <div class="text-muted">62 m <sup>2</sup></div>
-                                    <div class="price text-danger fw-bold">62 trieu</div>
+                                    <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
                                     <p class="text-muted mb-0">
                                         <i class="bi bi-briefcase-fill"></i>
                                         <span> Tin ưu tiên</span> -
@@ -567,10 +583,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="detail_mdb.html">
+                    <a href="detail.html">
                         <div class="item d-flex pt-1 pb-1">
                             <div class="imageWrapper position-relative">
-                                <img src="assets/img/new.png" alt="image" class="imaged w140 rounded-0">
+                                <img src="assets/img/new.png" alt="image" class="h-100 imaged w120 rounded-0">
                                 <div class="fa top-0 position-absolute end-0 pe-1 pt-1">
                                     <span class="fa-layers fa-fw">
                                         <i class="bi-aspect-ratio-fill text-dark fs-6" ></i>
@@ -583,16 +599,16 @@
                                         <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
                                     </span>
                                 </div>
-
                             </div>
                             <div class="in ps-2">
                                 <div class="content">
-                                    <div class="title limit-text ">
-                                        Bán đất tại TP hồ chí minh Binh Chanh
-                                    </div>
 
+                                    <h4 class="title limit-text p-0 overflow-hidden mb-0" style="height: 40px;">
+                                        Rao bán chung cư giá rẻ cực khủng phố hồ chí minh Bình Chánh Bình Chánh Bình Chánh
+                                    </h4>
                                     <div class="text-muted">62 m <sup>2</sup></div>
-                                    <div class="price text-danger fw-bold">62 trieu</div>
+                                    <strong class="price p-0 text-danger fw-bold m-0"> 1,5 tỷ</strong>
+
                                     <p class="text-muted mb-0">
                                         <i class="bi bi-briefcase-fill"></i>
                                         <span> Tin ưu tiên</span> -
@@ -605,6 +621,7 @@
                         <i class="bi bi-heart p-1 pt-3 top-0 position-absolute text-white"></i>
                     </a>
                 </li>
+
             </ul>
             <!-- *  list -->
 
