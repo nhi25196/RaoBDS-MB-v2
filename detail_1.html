@@ -20,6 +20,13 @@
     <!-- my css -->
     <!-- <link rel="stylesheet" href="assets/css/tina_css/detail.css"> -->
 
+    <style>
+        .slick-dots {
+            bottom: 86%;
+            /* top: 5px; */
+        }
+    </style>
+
 
 </head>
 
@@ -143,12 +150,36 @@
     <!-- App Casule -->
     <div id="appCapsule">
         <div class="section full">
-            <div class="single-item slick-dotted">
-                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+            <div class="single-item m-0">
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
                 </div>
                 <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
                 </div>
                 <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen modal-dialog-centered h-auto">
+                <div class="modal-content bg-dark">
+
+                    <div id="carouselExampleInterval carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active embed-responsive ratio ratio-16x9 video">
+                                <img src=" assets/img/play_vid.png" onclick="change_video()">
+
+                                <!-- <iframe src="https://www.youtube.com/embed/13lOUgavKVc?rel=1&autoplay=1&loop=1" title="YouTube video " allowfullscreen></iframe> -->
+                            </div>
+                            <div class="carousel-item ratio ratio-16x9 ">
+                                <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
+                            </div>
+                            <div class="carousel-item embed-responsive ratio ratio-16x9 ">
+                                <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -308,7 +339,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.single-item').slick({});
+            $('.single-item').slick({
+                dots: true,
+            });
         });
     </script>
 
