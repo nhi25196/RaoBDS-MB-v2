@@ -23,13 +23,19 @@
     </div>
     <!-- * loader -->
     <!-- App Header -->
-    <div class="appHeader no-border position-absolute">
+    <div class="appHeader bg-primary text-light">
         <div class="left">
             <a href="#" class="headerButton goBack">
                 <i class="bi bi-chevron-left"></i>
             </a>
         </div>
         <div class="pageTitle"> Thông tin chi tiết</div>
+        <div class="right">
+            <a href="index.html" class="headerButton">
+                <i class="bi bi-x"></i>
+            </a>
+
+        </div>
     </div>
     <!-- * App Header -->
 
@@ -39,11 +45,45 @@
             <div class=" p-0 transparent">
                 <div class="wide-block pb-1 pt-1">
                     <form>
-
-                        <div class="form-group">
+                        <div class="form-group boxed">
                             <div class="row pt-1">
                                 <div class="col-6">
-                                    <!-- <select class="form-control form-select pe-0" id="city5">
+                                    <select class="form-control form-select pe-0" id="city5">
+                                        <option selected="" disabled="" value="">Số tầng </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="3">5</option>
+                                        <option value="4">6</option>
+                                        <option value="3">7</option>
+                                        <option value="4">8</option>
+                                        <option value="3">9</option>
+                                        <option value="4">10</option>
+                                        <option value="4">nhiều hơn 10</option>
+                                    </select>
+                                    <!-- <div class="section-title fs-6">Số tầng </div> -->
+                                </div>
+                                <div class="col-6 text-end">
+                                    <select class="form-control form-select pe-0" id="city5">
+                                        <option selected="" disabled="" value="">Hướng </option>
+                                        <option value="1">Đông </option>
+                                        <option value="2">Nam</option>
+                                        <option value="3">Tây </option>
+                                        <option value="4">Bắc</option>
+                                    </select>
+                                    <!-- <div class="stepper stepper-secondary text-end">
+                                        <a href="#" class="stepper-button stepper-down">-</a>
+                                        <input type="text" class="form-control" value="0" disabled="">
+                                        <a href="#" class="stepper-button stepper-up">+</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group boxed">
+                            <div class="row">
+                                <div class="col-6">
+                                    <select class="form-control form-select pe-0" id="city5">
                                         <option selected="" disabled="" value="">Số phòng ngủ </option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -56,11 +96,11 @@
                                         <option value="3">9</option>
                                         <option value="4">10</option>
                                         <option value="4">nhiều hơn 10</option>
-                                    </select> -->
-                                    <div class="section-title fs-6">Số tầng </div>
+                                    </select>
+                                    <!-- <div class="section-title fs-6">Số tầng </div> -->
                                 </div>
                                 <div class="col-6 text-end">
-                                    <!-- <select class="form-control form-select pe-0" id="city5">
+                                    <select class="form-control form-select pe-0" id="city5">
                                         <option selected="" disabled="" value="">Số phòng vệ sinh </option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -73,16 +113,16 @@
                                         <option value="3">9</option>
                                         <option value="4">10</option>
                                         <option value="4">nhiều hơn 10</option>
-                                    </select> -->
-                                    <div class="stepper stepper-secondary text-end">
+                                    </select>
+                                    <!-- <div class="stepper stepper-secondary text-end">
                                         <a href="#" class="stepper-button stepper-down">-</a>
                                         <input type="text" class="form-control" value="0" disabled="">
                                         <a href="#" class="stepper-button stepper-up">+</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <div class="row pt-2">
                                 <div class="col-6">
 
@@ -97,8 +137,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
+                        </div> -->
+                        <!-- <div class="form-group">
                             <div class="row pt-2">
                                 <div class="col-6">
 
@@ -113,9 +153,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group boxed">
-                            <div class="row pt-1">
+                            <div class="row">
                                 <div class="col-6">
                                     <select class="form-control form-select pe-0" id="city5">
                                         <option selected="" disabled="" value="">Giấy tờ pháp lý </option>
@@ -140,7 +180,7 @@
 
                 <div class="section full mt-2">
                     <div class="section-title bg-transparent">Tiêu đề tin đăng và mô tả chi tiết</div>
-                    <div class="wide-block pb-4 pt-1">
+                    <div class="wide-block pb-0 pt-1">
                         <form>
                             <div class="form-group boxed">
                                 <div class="input-wrapper">
@@ -184,20 +224,21 @@
 
         </div>
     </div>
-    <div class="appBottomMenu carousel-button-footer">
 
-        <div class="row">
-            <div class="col-6">
-                <a href="#" class="btn btn-secondary btn-lg btn-block w100 rounded-0">Xem trước</a>
-            </div>
-            <div class="col-6">
-                <a href="detail.html" class="btn btn-primary btn-lg btn-block w100 rounded-0">Đăng tin </a>
-            </div>
+    <div class="row fixed-bottom">
+        <div class="col-6">
+            <a href="#" class="btn btn-secondary btn-lg btn-block w100 rounded-0">Xem trước</a>
         </div>
-
+        <div class="col-6">
+            <a href="detail.html" class="btn btn-primary btn-lg btn-block w100 rounded-0">Đăng tin </a>
+        </div>
     </div>
-    <!-- * App Capsule -->
 
+
+    <!-- * App Capsule -->
+    <!-- <a href="post_step_7.html">
+        <button type="submit" class="btn btn-primary btn-lg btn-block rounded-0 fixed-bottom">Xong</button>
+    </a> -->
     <!-- <a href="post_step_7.html">
             <button type="submit" class="btn btn-primary btn-lg btn-block rounded-0 fixed-bottom">Đăng tin</button>
         </a> -->
