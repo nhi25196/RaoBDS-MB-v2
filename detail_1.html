@@ -25,6 +25,16 @@
             bottom: 86%;
             /* top: 5px; */
         }
+        
+        .slick-next {
+            right: 0;
+            /* left: 0; */
+        }
+        
+        .slick-prev {
+            left: 0;
+            z-index: 1;
+        }
     </style>
 
 
@@ -163,23 +173,21 @@
             <div class="modal-dialog modal-fullscreen modal-dialog-centered h-auto">
                 <div class="modal-content bg-dark">
 
-                    <div id="carouselExampleInterval carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                            <div class="carousel-item active embed-responsive ratio ratio-16x9 video">
-                                <img src=" assets/img/play_vid.png" onclick="change_video()">
+                    <div class="single-item2 m-0">
+                        <div class=" active embed-responsive ratio ratio-16x9 video">
+                            <img src=" assets/img/play_vid.png" onclick="change_video()">
 
-                                <!-- <iframe src="https://www.youtube.com/embed/13lOUgavKVc?rel=1&autoplay=1&loop=1" title="YouTube video " allowfullscreen></iframe> -->
-                            </div>
-                            <div class="carousel-item ratio ratio-16x9 ">
-                                <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
-                            </div>
-                            <div class="carousel-item embed-responsive ratio ratio-16x9 ">
-                                <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
-                            </div>
+                            <!-- <iframe src="https://www.youtube.com/embed/13lOUgavKVc?rel=1&autoplay=1&loop=1" title="YouTube video " allowfullscreen></iframe> -->
                         </div>
-
-
+                        <div class="embed-responsive ratio ratio-16x9 ">
+                            <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
+                        </div>
+                        <div class="embed-responsive ratio ratio-16x9 ">
+                            <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -341,6 +349,12 @@
         $(document).ready(function() {
             $('.single-item').slick({
                 dots: true,
+                arrows: false,
+
+            });
+            $('.single-item2').slick({
+                dots: true,
+                arrows: true,
             });
         });
     </script>
