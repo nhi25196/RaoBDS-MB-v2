@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="manifest" href="__manifest.json">
 
-    <link rel="stylesheet" type="text/css" src="slick.min.js" />
-
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
     <!-- my css -->
     <!-- <link rel="stylesheet" href="assets/css/tina_css/detail.css"> -->
 
@@ -143,10 +143,13 @@
     <!-- App Casule -->
     <div id="appCapsule">
         <div class="section full">
-            <div class="single-item">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+            <div class="single-item slick-dotted">
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+                </div>
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+                </div>
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+                </div>
             </div>
         </div>
 
@@ -300,13 +303,12 @@
             document.getElementsByClassName('video')[0].innerHTML = `<iframe src="https://www.youtube.com/embed/13lOUgavKVc" title="YouTube video " allowfullscreen></iframe>`;
         }
     </script>
-    <script type="text/javascript" href="code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" href="code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" href="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" href="htpps://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.single-item').slick();
+            $('.single-item').slick({});
         });
     </script>
 
