@@ -23,6 +23,18 @@
             width: 100%;
             bottom: 50px;
         }
+        
+        .splide__slide {
+            margin: 0 !important
+        }
+        
+        .splide__track {
+            padding: 0 !important
+        }
+        
+        .splide__list {
+            transform: translateX(0);
+        }
     </style>
 
 </head>
@@ -184,18 +196,18 @@
             <!-- * carousel slider -->
             <div class="carousel-slider splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
                 <div class="splide__track" id="splide01-track" style="padding-left: 0; padding-right: 0; width: 100%">
-                    <div class="splide__list" id="splide01-list" style="transform: translateX(-1926px); padding: 0px !important;">
-                        <div class="splide__slide splide__slide--clone" aria-hidden="" tabindex="" style="margin-right: 0px!important; width: 100mw;">
+                    <ul class="splide__list" id="splide01-list" style=" padding: 0px !important;">
+                        <li class="splide__slide splide__slide--clone" aria-hidden="true" tabindex="-1">
                             <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
-                        </div>
-                        <div class="splide__slide splide__slide--clone" style="margin-right: 0px!important; width: 100%;">
+                        </li>
+                        <li class="splide__slide splide__slide--clone" style="margin-right: 0px!important; width: 100%;">
                             <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
-                        </div>
-                        <div class="splide__slide splide__slide--clone is-active is-visible" id="splide01-slide01" aria-hidden="false" tabindex="0" style="margin-right: 0px!important; width: 100mw;">
-                            <img src="assets/img/play_vid.png" alt="alt" class="imaged mw-100 square" style="width:100%">
-                        </div>
+                        </li>
+                        <li class="splide__slide splide__slide--clone is-active is-visible" id="splide01-slide01" aria-hidden="false" tabindex="0">
+                            <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
+                        </li>
 
-                    </div>
+                    </ul>
                 </div>
                 <!-- <ul class="splide__pagination">
                     <li><button class="splide__pagination__page is-active" type="button" aria-current="true" aria-controls="splide01-slide01" aria-label="Go to slide 1"></button></li>

@@ -1,12 +1,13 @@
 .splide {
     margin-bottom: -20px !important;
-    &:active{
+    &:active {
         cursor: grab;
     }
     .splide__list {
         padding-bottom: 20px !important;
     }
 }
+
 .carousel-single,
 .carousel-small {
     .splide__slide {
@@ -14,12 +15,14 @@
         padding-right: 16px !important;
     }
 }
-.carousel-multiple{
+
+.carousel-multiple {
     .splide__slide {
         margin-left: -8px !important;
         padding-right: 8px !important;
     }
 }
+
 .carousel-slider {
     text-align: center;
     .splide__list {
@@ -44,6 +47,7 @@
         }
     }
 }
+
 .carousel-button-footer {
     min-height: 84px;
     padding-left: 8px;
@@ -58,7 +62,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    > div {
+    >div {
         width: 100%;
     }
 }
