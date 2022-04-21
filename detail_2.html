@@ -30,6 +30,7 @@
         referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lg-video.min.css" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+
     <!--  -->
     <style>
         .slick-dots {
@@ -51,13 +52,12 @@
         .slick-next:before {
             color: #00000080;
         }
-        
-        body {
-            padding: 40px;
-            background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
-            color: #0e3481;
-            min-height: 100vh;
-        }
+        /* body {
+                padding: 40px;
+                background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+                color: #0e3481;
+                min-height: 100vh;
+            } */
         
         .header .lead {
             max-width: 620px;
@@ -148,63 +148,171 @@
         </div>
     </div>
     <!-- * Iconed Action Sheet -->
-
     <!-- share Action Sheet -->
-
+    <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetShare">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Chia sẻ</h5>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="action-button-list">
+                <li>
+                    <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
+                        <span>
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
+                        <span>
+                        <i class="bi bi-twitter"></i>
+                        Twitter
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
+                        <span>
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
+                        <span>
+                        <i class="bi bi-linkedin"></i>
+                        Linkedin
+                    </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- * Share Action Sheet -->
 
     <!-- App Casule -->
     <div id="appCapsule">
-        <!-- <div class="section full">
-            <div class="single-item m-0">
-                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
-                </div>
-                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
-                </div>
-                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen modal-dialog-centered h-auto">
-                <div class="modal-content bg-dark">
-
-                    <div class="single-item2 m-0">
-                        <div class=" active embed-responsive ratio ratio-16x9 video">
-                            <img src=" assets/img/play_vid.png" onclick="change_video()">
-
-                       </div>
-                        <div class="embed-responsive ratio ratio-16x9 ">
-                            <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
-                        </div>
-                        <div class="embed-responsive ratio ratio-16x9 ">
-                            <img src="assets/img/wide3.jpg" class="d-block w-100 " alt="... ">
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div> -->
-        <!-- "https://www.lightgalleryjs.com/videos/video1.mp4"> -->
-
-
-        <!--  -->
-        <div class="gallery-container d-flex align-items-center justify-content-center" id="gallery-container">
-            <a data-lg-size="1280-720" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" data-src="//www.youtube.com/watch?v=egyIeygdS_E" data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg">
-                <img class="img-responsive" src="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg" />
-            </a>
-
+        <!-- slider detail -->
+        <div class="single-item m-0" id="gallery-container">
             <a data-lg-size="1280-720" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" data-video='{"source": [{"src":"https://www.lightgalleryjs.com/videos/video1.mp4", "type":"video/mp4"}], "tracks": [{"src": "https://www.lightgalleryjs.com/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "controls": true}}'
                 data-poster="https://www.lightgalleryjs.com/images/demo/html5-video-poster.jpg">
-                <img class="img-responsive" src="https://www.lightgalleryjs.com/images/demo/html5-video-poster.jpg" />
+                <img class="imaged mw-100 square" style="width:100%" src="https://www.lightgalleryjs.com/images/demo/html5-video-poster.jpg" />
+            </a>
+            <a data-lg-size="1280-720" href="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
+                <img class="imaged mw-100 square" style="width:100%" src="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" />
+            </a>
+            <a data-lg-size="1280-720" href="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
+                <img class="imaged mw-100 square" style="width:100%" src="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" />
             </a>
         </div>
+        <!-- * slider detail -->
+        <div class="section full ">
+            <div class="table-responsive wide-block p-1 ">
+                <div class="mt-0 m-1 mb-0 ">
+                    <h4 class="medium mb-0 fw-bold">
+                        <i class="bi bi-heart "></i> &nbsp Căn hộ mini mlem nhất khu Thảo Điền
+                    </h4>
+                </div>
+                <div class="content m-1 mt-0 ">
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <div class="price text-danger fw-bold m-0 p-0 ">1,5 tỷ</div>
+                        </div>
+                        <div class="col-6 ">
+                            <p class="text-muted mb-0 text-end ">
+                                <span> 4 giờ trước</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text mb-0 ">
+                        <i class="bi bi-geo-alt "></i>
+                        <span> Xa Đức Hoà, huyện Đức Hoà, Long An</span>
+                    </div>
+                    <div class="row border-top border-bottom mt-1 mb-1  ">
+                        <div class="col-12 ">
+                            <div class="section mt-1 p-0 ">
+                                <div class="profile-head ">
+                                    <div class="avatar me-1 ">
+                                        <span class="badge badge-success badge-empty position-absolute "></span>
+                                        <img src="assets/img/avatar1.jpg " alt="avatar " class="imaged w32 rounded ">
+                                    </div>
+                                    <div class="in ">
+                                        <h4 class="name m-0"> Julian Gruber</h4>
+                                        <h5 class="subtext ">online</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section full ">
+                                <div class="profile-stats ps-2 pe-2 ">
+                                    <a href="# " class="item ">
+                                        <strong>90%</strong>Phản hồi chat
+                                    </a>
+                                    <a href="# " class="item ">
+                                        <strong>152</strong>Đã đăng
+                                    </a>
+                                    <a href="# " class="item ">
+                                        <strong>52</strong>Đã bán
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-1">Mặt phố Đường Láng - 48m2 x 7T thang máy - 11. X tỷ - phân lô ô tô tránh - kinh doanh dòng tiền đỉnh.<br> + Ngõ rộng ô tô tránh, thông, kinh doanh, văn phòng rất tuyệt vời.<br> + Mặt tiền rộng 4.88m, quá lý tưởng, sổ đỏ phân<br> lô
+                        vuông đét. Nhà xây mới được 3 năm, 7 tầng bề thế, có ô chờ thang máy.<br> - Tầng 1 là gara ô tô và để khoảng 20 xe máy.<br>- Tầng 2,3,4: Văn phòng Công ty.<br> - Tầng 5,6: Phòng ngủ master, WC.<br> - Tầng 7: Phòng thờ và sân phơi.<br>
+                    </p>
+                    <div class="header-large-title p-0 ">
+                        <h4 class="medium mb-1 p-0 fw-bold">
+                            Đặc điểm tin đăng
+                        </h4>
+                    </div>
 
+                    <div class="section full mb-2 ">
+                        <div class="wide-block p-0 ">
+                            <div class="table-responsive ">
+                                <table class="table ">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row ">Diện tích:</th>
+                                            <td>50 m<sup>2</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">Số tầng</th>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">Số phòng ngủ</th>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">Số toilet</th>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">Giấy tờ pháp lý</th>
+                                            <td>Đã có sổ</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row ">Tình trạng nội thất</th>
+                                            <td>Đầy đủ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-large-title p-0 ">
+                        <h4 class="medium mb-1 p-0 fw-bold">
+                            Vị trí trên bản đồ
+                        </h4>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.0295467165483!2d106.67066672788276!3d10.881112088484551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d62b3e0c7373%3A0x574a2fbade2e23b0!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gU09D!5e0!3m2!1svi!2s!4v1648702015878!5m2!1svi!2s "
+                        width="100% " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                </div>
+            </div>
+        </div>
 
-
-
-        <!--  -->
     </div>
     <!-- * App Casule -->
 
@@ -242,11 +350,7 @@
     <!-- Base Js File -->
     <script src="assets/js/base.js "></script>
 
-    <script>
-        function change_video() {
-            document.getElementsByClassName('video')[0].innerHTML = `<iframe src="https://www.youtube.com/embed/13lOUgavKVc" title="YouTube video " allowfullscreen></iframe>`;
-        }
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" href="htpps://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -261,11 +365,9 @@
                 dots: true,
                 arrows: true,
             });
-
-
-
         });
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/lightgallery.umd.min.js" integrity="sha512-e+39qUKXdaNAHHzMx+zHLald62YcdVqJpJGAqs6iIJ6RRWy5/9PKJr1eDAc3SuM/PTpguz9v2d83j6SFgnbTdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/lightgallery.min.js" integrity="sha512-Z3EF+OVry8EO1N1EFn6/j1v+PQJ3UqRJ3X+PEFHhJRd7sbEbxI2mZ1suHiXPiofaH7GiKrIZewfGpO+G98Kq5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/plugins/thumbnail/lg-thumbnail.umd.min.js" integrity="sha512-k0frmdLGJwy4TgST+EQdWd/RSG38k7/XZmYHhy0246xTOCJnto6KEZGyh7GnGgiU7CKECV9t7RX/CHWKxM6bzQ==" crossorigin="anonymous"
