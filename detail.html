@@ -17,7 +17,29 @@
 
     <!-- my css -->
     <!-- <link rel="stylesheet" href="assets/css/tina_css/detail.css"> -->
-
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <style>
+        .slick-dots {
+            bottom: 86%;
+            /* top: 5px; */
+        }
+        
+        .slick-next {
+            right: 0;
+            /* left: 0; */
+        }
+        
+        .slick-prev {
+            left: 0;
+            z-index: 1;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            color: #00000080;
+        }
+    </style>
 
 </head>
 
@@ -35,7 +57,6 @@
                 <i class="bi bi-chevron-left"></i>
             </a>
         </div>
-
         <div class="right">
             <a href="#" class="headerButton">
                 <i class="bi bi-share" data-bs-toggle="offcanvas" data-bs-target="#actionSheetShare"></i>
@@ -45,14 +66,11 @@
                 <i class="bi bi-three-dots-vertical" data-bs-toggle="offcanvas" data-bs-target="#actionSheetIconed"></i>
             </a>
         </div>
-
-
     </div>
     <!-- * App Header -->
 
     <!-- Iconed Action Sheet -->
     <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetIconed">
-
         <div class="offcanvas-body">
             <ul class="action-button-list">
                 <li>
@@ -88,7 +106,6 @@
                     </a>
                 </li>
                 <li class="action-divider"></li>
-
             </ul>
         </div>
     </div>
@@ -142,7 +159,7 @@
     <div id="appCapsule">
         <div class="section full">
             <!-- carousel slider -->
-            <div class="carousel-full splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
+            <!-- <div class="carousel-full splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
                 <div class="splide__track" id="splide01-track">
                     <ul class="splide__list" id="splide01-list" style="transform: translateX(-4840px);">
                         <li class="splide__slide splide__slide--clone" id="splide01-splide01" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
@@ -163,19 +180,27 @@
                         <li><button class="splide__pagination__page " type="button " aria-controls="splide03-slide03 " aria-label="Go to slide 2 "></button></li>
                     </ul>
                 </div>
+            </div> -->
+            <div class="section full">
+                <div class="single-item m-0">
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square " style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                </div>
             </div>
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-fullscreen modal-dialog-centered h-auto">
                     <div class="modal-content bg-dark">
-                        <div class="modal-header p-1 border-0">
-                            <!-- <h5 class="modal-title text-light" id="exampleModalLabel">Title video</h5> -->
+                        <!-- <div class="modal-header p-1 border-0">
                             <a class="text-light item" href="#" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
-                        </div>
+                        </div> -->
                         <div id="carouselExampleInterval carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active embed-responsive ratio ratio-16x9 video">
                                     <img src=" assets/img/play_vid.png" onclick="change_video()">
-
                                     <!-- <iframe src="https://www.youtube.com/embed/13lOUgavKVc?rel=1&autoplay=1&loop=1" title="YouTube video " allowfullscreen></iframe> -->
                                 </div>
                                 <div class="carousel-item ratio ratio-16x9 ">
@@ -193,20 +218,18 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                               </button>
-
                         </div>
                     </div>
                 </div>
             </div>
             <!-- * carousel slider -->
         </div>
-
         <div class="section full ">
             <div class="table-responsive wide-block p-1 ">
                 <div class="mt-0 m-1 mb-0 ">
-                    <h3 class="medium mb-0 ">
-                        <i class="bi bi-heart "></i> &nbsp Căn hộ mini mlem nhất khu Thảo Điền TPHCM Việt Nam
-                    </h3>
+                    <h4 class="medium mb-0 fw-bold">
+                        <i class="bi bi-heart "></i> &nbsp Căn hộ mini mlem nhất khu Thảo Điền
+                    </h4>
                 </div>
                 <div class="content m-1 mt-0 ">
                     <div class="row ">
@@ -232,7 +255,7 @@
                                         <img src="assets/img/avatar1.jpg " alt="avatar " class="imaged w32 rounded ">
                                     </div>
                                     <div class="in ">
-                                        <h3 class="name m-0 "> Julian Gruber</h3>
+                                        <h4 class="name m-0"> Julian Gruber</h4>
                                         <h5 class="subtext ">online</h5>
                                     </div>
                                 </div>
@@ -248,19 +271,19 @@
                                     <a href="# " class="item ">
                                         <strong>52</strong>Đã bán
                                     </a>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <p class="mb-1">Mặt phố Đường Láng - 48m2 x 7T thang máy - 11. X tỷ - phân lô ô tô tránh - kinh doanh dòng tiền đỉnh.<br> + Ngõ rộng ô tô tránh, thông, kinh doanh, văn phòng rất tuyệt vời.<br> + Mặt tiền rộng 4.88m, quá lý tưởng, sổ đỏ phân<br> lô
                         vuông đét. Nhà xây mới được 3 năm, 7 tầng bề thế, có ô chờ thang máy.<br> - Tầng 1 là gara ô tô và để khoảng 20 xe máy.<br>- Tầng 2,3,4: Văn phòng Công ty.<br> - Tầng 5,6: Phòng ngủ master, WC.<br> - Tầng 7: Phòng thờ và sân phơi.<br>
                     </p>
                     <div class="header-large-title p-0 ">
-                        <h5 class="section-title medium p-0 ">Đặc điểm tin đăng</h5>
+                        <h4 class="medium mb-1 p-0 fw-bold">
+                            Đặc điểm tin đăng
+                        </h4>
                     </div>
+
                     <div class="section full mb-2 ">
                         <div class="wide-block p-0 ">
                             <div class="table-responsive ">
@@ -269,32 +292,26 @@
                                         <tr>
                                             <th scope="row ">Diện tích:</th>
                                             <td>50 m<sup>2</sup></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row ">Số tầng</th>
                                             <td>7</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row ">Số phòng ngủ</th>
                                             <td>5</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row ">Số toilet</th>
                                             <td>5</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row ">Giấy tờ pháp lý</th>
                                             <td>Đã có sổ</td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row ">Tình trạng nội thất</th>
                                             <td>Đầy đủ</td>
-
                                         </tr>
                                     </tbody>
                                 </table>
@@ -302,7 +319,9 @@
                         </div>
                     </div>
                     <div class="header-large-title p-0 ">
-                        <h5 class="section-title medium p-0 ">Vị trí trên bản đồ</h5>
+                        <h4 class="medium mb-1 p-0 fw-bold">
+                            Vị trí trên bản đồ
+                        </h4>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.0295467165483!2d106.67066672788276!3d10.881112088484551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d62b3e0c7373%3A0x574a2fbade2e23b0!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gU09D!5e0!3m2!1svi!2s!4v1648702015878!5m2!1svi!2s "
                         width="100% " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
@@ -350,6 +369,24 @@
         function change_video() {
             document.getElementsByClassName('video')[0].innerHTML = `<iframe src="https://www.youtube.com/embed/13lOUgavKVc" title="YouTube video " allowfullscreen></iframe>`;
         }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" href="htpps://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.single-item').slick({
+                dots: true,
+                arrows: false,
+
+            });
+            $('.single-item2').slick({
+                dots: true,
+                arrows: true,
+            });
+
+
+        });
     </script>
 
 </body>

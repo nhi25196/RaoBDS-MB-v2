@@ -21,8 +21,18 @@
     <!-- my css -->
     <!-- <link rel="stylesheet" href="assets/css/tina_css/my-style.css">
     -->
-    <link rel="stylesheet" href="assets/css/tina_css/style_filter_form.css">
+    <link rel="stylesheet" href="assets/css/tina_css/style_text_limit.css">
 
+    <!-- slick lib -->
+    <link rel="stylesheet" href="assets/css/tina_css/style_filter_form.css">
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <style>
+        .slick-dots {
+            bottom: 86%;
+            /* top: 5px; */
+        }
+    </style>
 </head>
 
 <body>
@@ -48,13 +58,13 @@
             <span class="badge badge-danger">5</span>
         </div>
     </div>
+    <!-- * App Header -->
 
     <!-- Modal Basic -->
     <div class="modal fade modalbox" id="ModalBasic" data-bs-backdrop="static" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <div data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></div>
                     <h5 class="modal-title">Lọc kết quả </h5>
                     <i class="bi bi-info-circle fs-5" data-bs-toggle="offcanvas" href="#offcanvas-top"> </i>
@@ -68,8 +78,6 @@
                             <div>
                                 Lọc từ khoá:<br> - Tìm theo địa chỉ: Hồ chí minh, hà nội,...<br> - Tìm theo tiêu đề: Chung cư, nhà hẻm,... <br> ...
                                 <br> Lọc theo biểu mẫu có sẵn:<br> - Chọn các thông tin trên biểu mẫu để lọc kết quả cụ thể
-
-
                             </div>
                         </div>
                     </div>
@@ -86,10 +94,8 @@
                                             <i class="input-icon bi bi-search pt-1">
                                             </i>
                                             <input type="text" class="form-control ps-5" value="" placeholder="Tìm từ khoá...">
-
                                         </div>
                                     </form>
-                                    <!-- <input type="text" class="form-control" placeholder="Tìm từ khoá..."> -->
                                 </div>
                             </div>
                             <div class="form-group boxed p-0">
@@ -99,7 +105,7 @@
                                         <option value="1">Mua bán</option>
                                         <option value="2">Cho thuê</option>
                                         <option value="3">Dự án</option>
-                                        </select>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group boxed ">
@@ -189,82 +195,47 @@
                         </div>
                     </div>
 
-                    <!-- <div class="section full">
-                        <div class="section-title title_form">Bạn muốn</div>
-                        <div class="wide-block p-0">
-                            <div class="form-group boxed p-0">
-                                <div class="input-wrapper">
-
-                                    <div class="input-list">
-                                        <div class="form-check">
-
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
-                                            <i class="bi bi-arrow-down-left-square"></i>
-                                            <label class="form-check-label" for="flexCheckDefault4">
-                                                Mua
-                                                </label>
-                                        </div>
-                                        <div class="form-check position-relative">
-
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                                            <i class="bi bi-arrow-down-right-square"></i>
-                                            <label class="form-check-label" for="flexCheckDefault5">
-                                                Bán
-                                                </label>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="section full">
                         <div class="section-title title_form fw-bold">Hiển thị dạng</div>
                         <div class="wide-block p-0 mb-2 pb-4">
                             <div class="form-group boxed p-0">
                                 <div class="input-wrapper">
-
                                     <div class="input-list">
                                         <div class="form-check">
-
                                             <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
                                             <i class="bi bi-list-ul"></i>
                                             <label class="form-check-label" for="flexRadioDefault3">
                                                 Hình và chữ
-                                                </label>
+                                            </label>
                                         </div>
                                         <div class="form-check position-relative">
                                             <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4">
                                             <i class="bi bi-grid-3x3-gap"></i>
                                             <label class="form-check-label" for="flexRadioDefault4">
                                                 Lưới
-                                                </label>
+                                            </label>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg rounded-0 fixed-bottom">Xác nhận</button>
                     </div>
                     <!-- * form filter -->
                 </div>
-
             </div>
         </div>
     </div>
     <!-- * Modal Basic -->
 
-    <!-- * App Header -->
+
     <!-- App Casule -->
     <div id="appCapsule">
-
         <!-- carousel slider -->
-        <div class="carousel-full splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
+        <!-- <div class="carousel-full splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
             <div class="splide__track" id="splide01-track">
                 <ul class="splide__list" id="splide01-list" style="transform: translateX(-4840px);">
                     <li class="splide__slide splide__slide--clone" id="splide01-splide01" aria-hidden="true" tabindex="-1" style="width: 1210px;">
@@ -284,37 +255,32 @@
                     <li><button class="splide__pagination__page" type="button" aria-controls="splide03-slide03" aria-label="Go to slide 2"></button></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- * carousel slider -->
+
+        <!-- slick slider -->
+        <div class="section full">
+            <div class="single-item m-0">
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square " style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                </div>
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                </div>
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                </div>
+            </div>
+        </div>
+        <!-- * slick slider -->
+
         <!-- Kham pha BDS -->
         <div class="section full">
             <div class="section-title  mt-1">
-                <div class="subtitle m-0 fw-bold">Khám phá bất động sản</div>
-
+                <h4 class="subtitle m-0 fw-bold">Khám phá bất động sản</h4>
             </div>
             <div class="wide-block p-2 pb-1 listview">
                 <!-- carousel multiple -->
                 <div class="carousel-multiple splide">
                     <div class="splide__track p-0">
                         <ul class="splide__list pb-0">
-                            <!-- <li class="splide__slide imaged">
-                                <img src="assets/img/1.jpeg" class="card-img-top rounded-0" alt="image ">
-                                <div class="card-body pt-1 pb-1 p-0 text-center  ">
-                                    <h4 class="mb-0 ">Chuyên mục </h4>
-                                </div>
-                            </li>
-                            <li class="splide__slide imaged">
-                                <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
-                                <div class="card-body pt-1 pb-1 p-0 text-center">
-                                    <h4 class="mb-0 ">Chuyên mục </h4>
-                                </div>
-                            </li>
-                            <li class="splide__slide imaged">
-                                <img src="assets/img/4.jpeg" class="card-img-top rounded-0" alt="image ">
-                                <div class="card-body pt-1 pb-1 p-0 text-center ">
-                                    <h4 class="mb-0 ">Chuyên mục </h4>
-                                </div>
-                            </li> -->
                             <li class="splide__slide m-0 ">
                                 <div class="shadow-none card product-card rounded-0 ">
                                     <div class=" card-body position-relative p-0 pe-2 ">
@@ -344,7 +310,6 @@
                 </div>
                 <!-- * carousel multiple -->
             </div>
-
         </div>
 
         <!-- Mua ban BDS -->
@@ -367,11 +332,9 @@
                                 <div class="shadow-none  card product-card rounded-0 ">
                                     <div class=" card-body position-relative p-0 pe-2 ">
                                         <a href="detail.html " class="item ">
-
                                             <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
-
                                             <div class="content">
-                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                <h4 class="title limit-text p-0 overflow-hidden">
                                                     Rao bán chung cư giá rẻ cực khủng tai trung tam thanh pho ho chi minh
                                                 </h4>
                                                 <div class="text-muted p-0">62 m <sup>2</sup></div>
@@ -403,19 +366,16 @@
                                                     <span class="fa-2xs fa-layers-text fa-inverse"  style="padding-right:5px">5</span>
                                                 </span>
                                             </div>
-
                                         </a>
                                         <i class="bi bi-heart p-2 position-absolute text-white "></i>
-
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
+                <!-- * carousel multiple -->
             </div>
-            <!-- * carousel small -->
             <!-- <div class="text-center ">
                 <a href="list.html ">
                     <button type="button " class="btn btn-text-primary me-1"> <span>Xem thêm 1.878 bất động sản khác</span> <i class="bi bi-arrow-right "></i></button>
@@ -427,7 +387,8 @@
         <!--  Cho thue BDS-->
         <div class="section full">
             <div class="section-title  mt-1">
-                <div class="subtitle m-0 fw-bold">Cho thuê bất động sản</div>
+                <h4 class="subtitle m-0 fw-bold">Cho thuê bất động sản</h4>
+
                 <div class="text-end ">
                     <a href="list.html" class="listview-title p-0">
                         <span>Xem tất cả</span>
@@ -436,7 +397,7 @@
                 </div>
             </div>
             <div class="wide-block p-2 listview">
-                <!-- carousel small -->
+                <!-- carousel multiple -->
                 <div class="carousel-multiple splide ">
                     <div class="splide__track p-0 ">
                         <ul class="splide__list ">
@@ -447,7 +408,7 @@
                                             <img src="assets/img/2.jpeg " class="card-img-top rounded-0" alt="image ">
 
                                             <div class="content">
-                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                <h4 class="title limit-text p-0 overflow-hidden">
                                                     Rao bán chung cư giá rẻ cực khủng tai trung tam thanh pho ho chi minh
                                                 </h4>
                                                 <div class="text-muted p-0">Diện tích : <span>62</span>m<sup>2</sup></div>
@@ -475,12 +436,11 @@
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
+                <!-- * carousel multiple -->
             </div>
-            <!-- * carousel small -->
             <!-- <div class="text-center ">
                 <a href="list.html ">
                     <button type="button " class="btn btn-text-primary me-1 "> <span>Xem thêm 1.878 bất động sản khác</span> <i class="bi bi-arrow-right "></i></button>
@@ -492,7 +452,7 @@
         <!-- news -->
         <div class="section full">
             <div class="section-title  mt-1">
-                <div class="subtitle m-0 fw-bold">Tin tức</div>
+                <h4 class="subtitle m-0 fw-bold">Tin tức</h4>
                 <div class="text-end ">
                     <a href="list.html" class="listview-title p-0">
                         <span>Xem tất cả</span>
@@ -501,7 +461,7 @@
                 </div>
             </div>
             <div class="wide-block pt-2 pb-2">
-                <!-- carousel small -->
+                <!-- carousel multiple -->
                 <div class="carousel-multiple splide ">
                     <div class="splide__track p-0 ">
                         <ul class="splide__list ">
@@ -514,33 +474,25 @@
                                                 <!-- <div class="title p-0 ">
                                                     Kinh nghiem xay nha cap 4 dep, tiet kiem chi phi
                                                 </div> -->
-                                                <h4 class="title limit-text p-0 overflow-hidden" style="height: 42px;">
+                                                <h4 class="title limit-text p-0 overflow-hidden">
                                                     Kinh nghiệm xây nhà cấp 4 đẹp tiết kiệm
                                                 </h4>
-
-                                                <p class="text-muted mb-0 overflow-hidden" style="max-height: 60px;">
-                                                    <span class="limit-text "> Xấy nhà cấp 4 sử dụng cơ cấu đơn giản chi phí thấp rất nhiều so với nhà cao tầng</span>
+                                                <p class="text-muted mb-0 overflow-hidden">
+                                                    <span class="limit-text-3 "> Xấy nhà cấp 4 sử dụng cơ cấu đơn giản chi phí thấp rất nhiều so với nhà cao tầng</span>
                                                 </p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-                <!-- * carousel small -->
+                <!-- * carousel multiple -->
             </div>
 
         </div>
         <!-- * news -->
-
-
-
-
-        <!-- * new -->
-
     </div>
     <!-- * App Casule -->
 
@@ -577,7 +529,6 @@
                 <strong>Thêm</strong>
             </div>
         </a>
-
     </div>
     <!-- * App Bottom Menu -->
 
@@ -592,6 +543,23 @@
     <script src="assets/js/plugins/progressbar-js/progressbar.min.js "></script>
     <!-- Base Js File -->
     <script src="assets/js/base.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" href="htpps://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.single-item').slick({
+                dots: true,
+                arrows: false,
+
+            });
+            $('.single-item2').slick({
+                dots: true,
+                arrows: true,
+            });
+
+        });
+    </script>
 
 </body>
 

@@ -35,6 +35,11 @@
             left: 0;
             z-index: 1;
         }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            color: #00000080;
+        }
     </style>
 
 
@@ -161,7 +166,7 @@
     <div id="appCapsule">
         <div class="section full">
             <div class="single-item m-0">
-                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square fix-re" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
                 </div>
                 <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%">
                 </div>
@@ -352,9 +357,24 @@
                 arrows: false,
 
             });
-            $('.single-item2').slick({
-                dots: true,
-                arrows: true,
+            // $('.single-item2').slick({
+            //     dots: true,
+            //     arrows: true,
+            // });
+            $('.fix-re').on('click', function() {
+                $('#loader').attr('style', '');
+                $('#exampleModalToggle').modal('show');
+            });
+
+            $('#exampleModalToggle').on('shown.bs.modal', function(e) {
+                $('.single-item2').slick({
+                    dots: true,
+                    arrows: true,
+                });
+                setTimeout(function() {
+                    $('#loader').css('display', 'none');
+                }, 1000);
+
             });
         });
     </script>
