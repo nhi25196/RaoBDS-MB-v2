@@ -378,7 +378,12 @@
 
         lightGallery(document.getElementById("gallery-container"), {
             speed: 500,
-            plugins: [lgVideo]
+            plugins: [lgVideo],
+            mobileSettings: {
+                controls: false,
+                showCloseIcon: false,
+                download: false,
+            }
         });
     </script>
 </body>
