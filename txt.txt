@@ -1,2 +1,3 @@
 - css form filter
-- slider dot dính js của theme không fix được (=> su dung thư viện slick slider)
+- dots slider dính js tranforms của theme không fix được 
+(=> su dung thư viện slick slider + gallery lightgalleryjs)

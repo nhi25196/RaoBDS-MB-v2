@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>detail add slick lib - load 1500</title>
+    <title>detail slick</title>
     <meta name="description" content="Mobilekit HTML Mobile UI Kit">
     <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
@@ -15,36 +15,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="manifest" href="__manifest.json">
 
-    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
-    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
     <!-- my css -->
     <!-- <link rel="stylesheet" href="assets/css/tina_css/detail.css"> -->
-    <!--  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lightgallery.min.css" integrity="sha512-J3GvWzuXtDGv7Kmqhj1gbn/jM2i3G40XtSBcqGEQ7eLpP0izHygFgT0FMIVCWMVRZnz7u2rS6mhTtlQ3oJsr1A==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lg-zoom.min.css" integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lg-thumbnail.min.css" integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lightgallery-bundle.min.css" integrity="sha512-91yJwfiGTCo9TM74ZzlAIAN4Eh5EWHpQJUfvo/XhpH6lzQtiRFkFRW1W+JSg4ch4XW3/xzh+dY4TOw/ILpavQA==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lg-video.min.css" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <!--  -->
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
     <style>
-        .profile-stats .item strong {
-            font-size: 15px!important;
-        }
-        
         .slick-dots {
-            bottom: 2%;
+            bottom: 86%;
             /* top: 5px; */
-        }
-        
-        .slick-dots li button:before {
-            color: rgb(255, 255, 255);
-            font-size: 9px;
         }
         
         .slick-next {
@@ -61,26 +39,7 @@
         .slick-next:before {
             color: #00000080;
         }
-        /* body {
-                padding: 40px;
-                background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
-                color: #0e3481;
-                min-height: 100vh;
-            } */
-        /* .header .lead {
-            max-width: 620px;
-        } */
-        /* .gallery-container a {
-            width: 240px;
-            margin: 5px;
-        } */
-        
-        .gallery-container a img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
-
 
 </head>
 
@@ -102,6 +61,7 @@
             <a href="#" class="headerButton">
                 <i class="bi bi-share" data-bs-toggle="offcanvas" data-bs-target="#actionSheetShare"></i>
             </a>
+
             <a href="#" class="headerButton">
                 <i class="bi bi-three-dots-vertical" data-bs-toggle="offcanvas" data-bs-target="#actionSheetIconed"></i>
             </a>
@@ -150,6 +110,7 @@
         </div>
     </div>
     <!-- * Iconed Action Sheet -->
+
     <!-- share Action Sheet -->
     <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetShare">
         <div class="offcanvas-header">
@@ -160,33 +121,33 @@
                 <li>
                     <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
                         <span>
-                        <i class="bi bi-facebook"></i>
-                        Facebook
-                    </span>
+                            <i class="bi bi-facebook"></i>
+                            Facebook
+                        </span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
                         <span>
-                        <i class="bi bi-twitter"></i>
-                        Twitter
-                    </span>
+                            <i class="bi bi-twitter"></i>
+                            Twitter
+                        </span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
                         <span>
-                        <i class="bi bi-instagram"></i>
-                        Instagram
-                    </span>
+                            <i class="bi bi-instagram"></i>
+                            Instagram
+                        </span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="btn btn-list" data-bs-dismiss="offcanvas">
                         <span>
-                        <i class="bi bi-linkedin"></i>
-                        Linkedin
-                    </span>
+                            <i class="bi bi-linkedin"></i>
+                            Linkedin
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -196,20 +157,73 @@
 
     <!-- App Casule -->
     <div id="appCapsule">
-        <!-- slider detail -->
-        <div class="single-item m-0" id="gallery-container">
-            <a data-lg-size="1280-720" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" data-video='{"source": [{"src":"https://www.lightgalleryjs.com/videos/video1.mp4", "type":"video/mp4"}], "tracks": [{"src": "https://www.lightgalleryjs.com/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "controls": true}}'
-                data-poster="https://www.lightgalleryjs.com/images/demo/html5-video-poster.jpg">
-                <img class="imaged mw-100 square" style="width:100%" src="https://www.lightgalleryjs.com/images/demo/html5-video-poster.jpg" />
-            </a>
-            <a data-lg-size="1280-720" href="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
-                <img class="imaged mw-100 square" style="width:100%" src="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" />
-            </a>
-            <a data-lg-size="1280-720" href="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
-                <img class="imaged mw-100 square" style="width:100%" src="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" />
-            </a>
+        <div class="section full">
+            <!-- carousel slider -->
+            <!-- <div class="carousel-full splide splide--loop splide--ltr splide--draggable is-active" id="splide01" style="visibility: visible;">
+                <div class="splide__track" id="splide01-track">
+                    <ul class="splide__list" id="splide01-list" style="transform: translateX(-4840px);">
+                        <li class="splide__slide splide__slide--clone" id="splide01-splide01" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+
+                            <img src="assets/img/play_vid.png" alt="alt " class="imaged w-100 square bg-dark ">
+                        </li>
+                        <li class="splide__slide splide__slide--clone " id="splide02-splide02 " aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                            <img src="assets/img/wide3.jpg " alt="alt " class="imaged w-100 square ">
+                        </li>
+                        <li class="splide__slide splide__slide--clone " id="splide03-slide03 " aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                            <img src="assets/img/wide1.jpg " alt="alt " class="imaged w-100 square ">
+                        </li>
+
+                    </ul>
+                    <ul class="splide__pagination mb-2 ">
+                        <li><button class="splide__pagination__page is-active " type="button " aria-controls="splide01-slide01 " aria-label="Go to slide 1 "></button></li>
+                        <li><button class="splide__pagination__page " type="button " aria-controls="splide02-slide02 " aria-label="Go to slide 2 "></button></li>
+                        <li><button class="splide__pagination__page " type="button " aria-controls="splide03-slide03 " aria-label="Go to slide 2 "></button></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="section full">
+                <div class="single-item m-0">
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square " style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                    <div> <img src="assets/img/wide3.jpg" alt="alt" class="imaged mw-100 square" style="width:100%" aria-hidden="true" tabindex="-1" data-bs-toggle="modal" href="#exampleModalToggle">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen modal-dialog-centered h-auto">
+                    <div class="modal-content bg-dark">
+                        <!-- <div class="modal-header p-1 border-0">
+                            <a class="text-light item" href="#" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+                        </div> -->
+                        <div id="carouselExampleInterval carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active embed-responsive ratio ratio-16x9 video">
+                                    <img src=" assets/img/play_vid.png" onclick="change_video()">
+                                    <!-- <iframe src="https://www.youtube.com/embed/13lOUgavKVc?rel=1&autoplay=1&loop=1" title="YouTube video " allowfullscreen></iframe> -->
+                                </div>
+                                <div class="carousel-item ratio ratio-16x9 ">
+                                    <img src="assets/img/wide1.jpg " class="d-block w-100 " alt="... ">
+                                </div>
+                                <div class="carousel-item embed-responsive ratio ratio-16x9 ">
+                                    <img src="assets/img/wide1.jpg " class="d-block w-100 " alt="... ">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- * carousel slider -->
         </div>
-        <!-- * slider detail -->
         <div class="section full ">
             <div class="table-responsive wide-block p-1 ">
                 <div class="mt-0 m-1 mb-0 ">
@@ -269,6 +283,7 @@
                             Đặc điểm tin đăng
                         </h4>
                     </div>
+
                     <div class="section full mb-2 ">
                         <div class="wide-block p-0 ">
                             <div class="table-responsive ">
@@ -313,7 +328,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- * App Casule -->
 
@@ -351,7 +365,11 @@
     <!-- Base Js File -->
     <script src="assets/js/base.js "></script>
 
-
+    <script>
+        function change_video() {
+            document.getElementsByClassName('video')[0].innerHTML = `<iframe src="https://www.youtube.com/embed/13lOUgavKVc" title="YouTube video " allowfullscreen></iframe>`;
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" href="htpps://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -366,31 +384,11 @@
                 dots: true,
                 arrows: true,
             });
+
+
         });
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/lightgallery.umd.min.js" integrity="sha512-e+39qUKXdaNAHHzMx+zHLald62YcdVqJpJGAqs6iIJ6RRWy5/9PKJr1eDAc3SuM/PTpguz9v2d83j6SFgnbTdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/lightgallery.min.js" integrity="sha512-Z3EF+OVry8EO1N1EFn6/j1v+PQJ3UqRJ3X+PEFHhJRd7sbEbxI2mZ1suHiXPiofaH7GiKrIZewfGpO+G98Kq5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/plugins/thumbnail/lg-thumbnail.umd.min.js" integrity="sha512-k0frmdLGJwy4TgST+EQdWd/RSG38k7/XZmYHhy0246xTOCJnto6KEZGyh7GnGgiU7CKECV9t7RX/CHWKxM6bzQ==" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/plugins/mediumZoom/lg-medium-zoom.umd.min.js" integrity="sha512-hJoyjyhspk8AZiQFNFwrMYIlmPz9yYC4BoWHUR2ujbfAZ5crAe4lXLc3Y0YJmuXcFDzyQQJu+QZSb+nwdMt60w==" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/plugins/video/lg-video.min.js" integrity="sha512-qM1isaAXKJADabHma45LqQZ5X/nwUasZf3yZCgAeTM8qpm/92MiHR5G/Agr72QEzVQaZyFsnEV3NWCukkvV6hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/plugins/video/lg-video.umd.min.js" integrity="sha512-2hlf/Am7stpUbhbWQJT3A+tqa7flMEtF88DLnZk/gSgx6OT1Z6wplUjCc303WW+lIHGoCzWk8Tb2/sZagBBw3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        // import lightGallery from "https://cdn.skypack.dev/lightgallery@2.3.0-beta.4";
-        // import lgVideo from "https://cdn.skypack.dev/lightgallery@2.3.0-beta.4/plugins/video";
-
-        lightGallery(document.getElementById("gallery-container"), {
-            speed: 500,
-            plugins: [lgVideo],
-            mobileSettings: {
-                controls: true,
-                showCloseIcon: true,
-                download: true,
-            }
-        });
-    </script>
 </body>
 
 </html>
